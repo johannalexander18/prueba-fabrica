@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(img/fondo.jpg) no-repeat;
+    background-size: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.calculadora {
+    background-color: #02be54e5;
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+    border: 2px solid red;
+    backdrop-filter: blur(7%);
+    box-shadow: 0px 0px 15px 20px rgb(0, 0, 0);
+    
+}
+
+.pantalla {
+    grid-column: 1 / -1;
+    background: linear-gradient(110deg, rgb(81, 80, 80), rgb(18, 18, 18),rgb(0, 0, 0));
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+    border: 2px solid red;
+    box-shadow: 0px 0px 15px 10px rgb(0, 0, 0);
+}
+
+.btn {
+    background: linear-gradient(110deg, rgb(81, 80, 80), rgb(18, 18, 18),rgb(0, 0, 0));
+    color: white;
+    border: 1px solid red;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 8px 8px 8px;
+    box-shadow: 0px 0px 15px 10px rgb(0, 0, 0);
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+    background: linear-gradient(110deg, rgb(126, 126, 126), rgb(116, 115, 115),rgb(186, 186, 186));
+}
+
+.btn:hover {
+    background-color: #090c31;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background: #ff0000;
+    box-shadow: 0px 0px 15px red;
+}
+
+#igual:hover {
+    background: #ee5e5e;
+}
